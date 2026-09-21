@@ -1,0 +1,266 @@
+[
+  {
+    "id": "Genesis",
+    "name": "创世记"
+  },
+  {
+    "id": "Exodus",
+    "name": "出埃及记"
+  },
+  {
+    "id": "Leviticus",
+    "name": "利未记"
+  },
+  {
+    "id": "Numbers",
+    "name": "民数记"
+  },
+  {
+    "id": "Deuteronomy",
+    "name": "申命记"
+  },
+  {
+    "id": "Joshua",
+    "name": "约书亚记"
+  },
+  {
+    "id": "Judges",
+    "name": "士师记"
+  },
+  {
+    "id": "Ruth",
+    "name": "路得记"
+  },
+  {
+    "id": "1_Samuel",
+    "name": "撒母耳记上"
+  },
+  {
+    "id": "2_Samuel",
+    "name": "撒母耳记下"
+  },
+  {
+    "id": "1_Kings",
+    "name": "列王纪上"
+  },
+  {
+    "id": "2_Kings",
+    "name": "列王纪下"
+  },
+  {
+    "id": "1_Chronicles",
+    "name": "历代志上"
+  },
+  {
+    "id": "2_Chronicles",
+    "name": "历代志下"
+  },
+  {
+    "id": "Ezra",
+    "name": "以斯拉记"
+  },
+  {
+    "id": "Nehemiah",
+    "name": "尼希米记"
+  },
+  {
+    "id": "Esther",
+    "name": "以斯帖记"
+  },
+  {
+    "id": "Job",
+    "name": "约伯记"
+  },
+  {
+    "id": "Psalm",
+    "name": "诗篇"
+  },
+  {
+    "id": "Proverbs",
+    "name": "箴言"
+  },
+  {
+    "id": "Ecclesiastes",
+    "name": "传道书"
+  },
+  {
+    "id": "Song_of_Songs",
+    "name": "雅歌"
+  },
+  {
+    "id": "Isaiah",
+    "name": "以赛亚书"
+  },
+  {
+    "id": "Jeremiah",
+    "name": "耶利米书"
+  },
+  {
+    "id": "Lamentations",
+    "name": "耶利米哀歌"
+  },
+  {
+    "id": "Ezekiel",
+    "name": "以西结书"
+  },
+  {
+    "id": "Daniel",
+    "name": "但以理书"
+  },
+  {
+    "id": "Hosea",
+    "name": "何西阿书"
+  },
+  {
+    "id": "Joel",
+    "name": "约珥书"
+  },
+  {
+    "id": "Amos",
+    "name": "阿摩司书"
+  },
+  {
+    "id": "Obadiah",
+    "name": "俄巴底亚书"
+  },
+  {
+    "id": "Jonah",
+    "name": "约拿书"
+  },
+  {
+    "id": "Micah",
+    "name": "弥迦书"
+  },
+  {
+    "id": "Nahum",
+    "name": "那鸿书"
+  },
+  {
+    "id": "Habakkuk",
+    "name": "哈巴谷书"
+  },
+  {
+    "id": "Zephaniah",
+    "name": "西番雅书"
+  },
+  {
+    "id": "Haggai",
+    "name": "哈该书"
+  },
+  {
+    "id": "Zechariah",
+    "name": "撒迦利亚书"
+  },
+  {
+    "id": "Malachi",
+    "name": "玛拉基书"
+  },
+  {
+    "id": "Matthew",
+    "name": "马太福音"
+  },
+  {
+    "id": "Mark",
+    "name": "马可福音"
+  },
+  {
+    "id": "Luke",
+    "name": "路加福音"
+  },
+  {
+    "id": "John",
+    "name": "约翰福音"
+  },
+  {
+    "id": "Acts",
+    "name": "使徒行传"
+  },
+  {
+    "id": "Romans",
+    "name": "罗马书"
+  },
+  {
+    "id": "1_Corinthians",
+    "name": "哥林多前书"
+  },
+  {
+    "id": "2_Corinthians",
+    "name": "哥林多后书"
+  },
+  {
+    "id": "Galatians",
+    "name": "加拉太书"
+  },
+  {
+    "id": "Ephesians",
+    "name": "以弗所书"
+  },
+  {
+    "id": "Philippians",
+    "name": "腓立比书"
+  },
+  {
+    "id": "Colossians",
+    "name": "歌罗西书"
+  },
+  {
+    "id": "1_Thessalonians",
+    "name": "帖撒罗尼迦前书"
+  },
+  {
+    "id": "2_Thessalonians",
+    "name": "帖撒罗尼迦后书"
+  },
+  {
+    "id": "1_Timothy",
+    "name": "提摩太前书"
+  },
+  {
+    "id": "2_Timothy",
+    "name": "提摩太后书"
+  },
+  {
+    "id": "Titus",
+    "name": "提多书"
+  },
+  {
+    "id": "Philemon",
+    "name": "腓利门书"
+  },
+  {
+    "id": "Hebrews",
+    "name": "希伯来书"
+  },
+  {
+    "id": "James",
+    "name": "雅各书"
+  },
+  {
+    "id": "1_Peter",
+    "name": "彼得前书"
+  },
+  {
+    "id": "2_Peter",
+    "name": "彼得后书"
+  },
+  {
+    "id": "1_John",
+    "name": "约翰一书"
+  },
+  {
+    "id": "2_John",
+    "name": "约翰二书"
+  },
+  {
+    "id": "3_John",
+    "name": "约翰三书"
+  },
+  {
+    "id": "Jude",
+    "name": "犹大书"
+  },
+  {
+    "id": "Revelation",
+    "name": "启示录"
+  }
+]

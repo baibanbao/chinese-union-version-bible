@@ -1,0 +1,17 @@
+{
+  "cus": {
+    "url": "https://api.getbible.net/v2/cus.json",
+    "sha256": "f7c98f5621e9146253220c0acd2dd00359b6c30e354fb136f8773bfc114cd061",
+    "translation": "Union Simplified"
+  },
+  "cut": {
+    "url": "https://api.getbible.net/v2/cut.json",
+    "sha256": "2d08f4bee5ecd0d8e8dca80334a6238992d14077dae0d7d7684ad0202c95d9ea",
+    "translation": "Union Traditional"
+  },
+  "kjv": {
+    "url": "https://api.getbible.net/v2/kjv.json",
+    "sha256": "c85b09b4828a45f15a60d25732c2f4279aaefba1f5f6c41c2e1b4d51c8d4170e",
+    "translation": "King James Version"
+  }
+}

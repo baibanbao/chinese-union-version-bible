@@ -1,0 +1,8 @@
+Scripture data: https://api.getbible.net/v2/translations.json
+GetBible identifiers: cus, cut, kjv.
+The catalog marks cus and cut as Public Domain, and kjv as GPL.
+The KJV distribution notice credits CrossWire Bible Society (2003-2023) and grants use of its prepared text for any purpose.
+The source notes that rights to the KJV base text are held by the Crown of England.
+See translation-metadata.json for full distribution metadata.
+Reference banner: https://www.chinesebibleonline.com/images/banners/Banner_640_300_1.jpg
+Banner copyright remains with its rights holder. No image license is implied.
