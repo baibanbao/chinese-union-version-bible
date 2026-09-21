@@ -4,7 +4,7 @@ Chinese Union Version Bible
 
 参考 https://www.chinesebibleonline.com/ 的独立无广告版本。
 
-在线阅读：https://wangpei.me/chinese-union-version-bible/
+在线阅读：https://cuvbible.com/
 
 ## 打开
 
