@@ -1,0 +1,423 @@
+{
+  "title": "NET 圣经中文版（简体 PDF）",
+  "source": {
+    "title": "bible.org NET 圣经中文版 PDF 下载",
+    "url": "https://bible.org/chinese/e/download/pdf",
+    "files_updated_on": "2011-12-15"
+  },
+  "original_directory": "sc_pdf_20111215",
+  "file_count": 67,
+  "pdf_total_bytes": 50019951,
+  "pdf_total_pages": 2775,
+  "archive": {
+    "filename": "sc_pdf_20111215.zip",
+    "size": 48845753,
+    "sha256": "a912bc17693a4cce9596ea1a72622b1f6163f7d3570a325cab4b53c9c19d56f4",
+    "pdf_count": 67,
+    "top_level_directory": "sc_pdf_20111215/"
+  },
+  "files": [
+    {
+      "name": "译者序",
+      "filename": "sc_00-preface.pdf",
+      "size": 73125,
+      "sha256": "499ae503a9f22e0e066fd07e0190268873b2543eb874f5d688ca4ffff3159068"
+    },
+    {
+      "name": "创世记",
+      "filename": "sc_01-ge.pdf",
+      "size": 1827704,
+      "sha256": "adb2da2a6e5fd4f6fd359ea6a18944d7b79cacac85fa56a4d9611dd6401ef628"
+    },
+    {
+      "name": "出埃及记",
+      "filename": "sc_02-exo.pdf",
+      "size": 1205300,
+      "sha256": "722300aa5631e91274500227a11430ef8da099e10106c20398ef35467ac1efb8"
+    },
+    {
+      "name": "利未记",
+      "filename": "sc_03-lev.pdf",
+      "size": 616613,
+      "sha256": "361ed4bcb1ff2011988c1c59f519650ead2ad3eb6bc2054b9e0b9a9da034a5d6"
+    },
+    {
+      "name": "民数记",
+      "filename": "sc_04-num.pdf",
+      "size": 1198783,
+      "sha256": "3afde9f5c1bb155fde3dc397848b8d97589d04e6aa512816f0da597e0f3db6fd"
+    },
+    {
+      "name": "申命记",
+      "filename": "sc_05-deu.pdf",
+      "size": 1185259,
+      "sha256": "8577712bf21bf4cc55ebca85c7fbdb16c88b12929acef8de2548219e67408c56"
+    },
+    {
+      "name": "约书亚记",
+      "filename": "sc_06-jos.pdf",
+      "size": 964521,
+      "sha256": "c390344f8c6fb2e042e4d3cac1788911a7773b1ae15caae340cd5ce78ad4b3c2"
+    },
+    {
+      "name": "士师记",
+      "filename": "sc_07-jdg.pdf",
+      "size": 805601,
+      "sha256": "d69c455281dc4e3060f728717275c6e068db0e4c8282247268cffe8c3567bb5d"
+    },
+    {
+      "name": "路得记",
+      "filename": "sc_08-rut.pdf",
+      "size": 265384,
+      "sha256": "da4be16051d1d4897034bdc1870a529fbee64675a91d28da468b81dfd2ce8771"
+    },
+    {
+      "name": "撒母耳记上",
+      "filename": "sc_09-1sa.pdf",
+      "size": 911184,
+      "sha256": "ba55a1fc97989fa8ee6fc13b691e1d90f0203108584ddc7796ecc6d81dd3bb15"
+    },
+    {
+      "name": "撒母耳记下",
+      "filename": "sc_10-2sa.pdf",
+      "size": 885474,
+      "sha256": "f87e32d1576b36e8ee1dba0848a7adb8e06e76a1e08306fe1cdd3763adf204f8"
+    },
+    {
+      "name": "列王纪上",
+      "filename": "sc_11-1ki.pdf",
+      "size": 862211,
+      "sha256": "aba8383f3a03dcc4e68cd11288dda562e37686069d49589e5c23751c20fce90b"
+    },
+    {
+      "name": "列王纪下",
+      "filename": "sc_12-2ki.pdf",
+      "size": 916691,
+      "sha256": "b61c910a5c342d6e3a1d8755e10cdd8cd21d005fdb5f477e34408513d7c1310d"
+    },
+    {
+      "name": "历代志上",
+      "filename": "sc_13-1ch.pdf",
+      "size": 793489,
+      "sha256": "a511975b620de7beb1823e2df62e5cb08d8fc8cc356a6d0a819c4be37d3eba14"
+    },
+    {
+      "name": "历代志下",
+      "filename": "sc_14-2ch.pdf",
+      "size": 874770,
+      "sha256": "ec4a494c913d83e06de9ecd333477955684fd662ed69362b2bc36c17dac0b41a"
+    },
+    {
+      "name": "以斯拉记",
+      "filename": "sc_15-ezr.pdf",
+      "size": 611692,
+      "sha256": "59918ce40c07865b743ea6e1dae60181779a6a98c078f204158e94d9d5a494a7"
+    },
+    {
+      "name": "尼希米记",
+      "filename": "sc_16-neh.pdf",
+      "size": 727322,
+      "sha256": "3ccfe972343b9ad1c199b8416ca76209249bc2d5e03f7bfe37d4a9d518c816a1"
+    },
+    {
+      "name": "以斯帖记",
+      "filename": "sc_17-est.pdf",
+      "size": 535663,
+      "sha256": "3923f5ba57533a89154beb5e78cf3c36039f8aaff7e244924c8dc81d5e2b9fba"
+    },
+    {
+      "name": "约伯记",
+      "filename": "sc_18-job.pdf",
+      "size": 1160065,
+      "sha256": "828d932bb13b7b4a65656944ce5c58d164d36f31ef85cdd3c3873dfbdc62643f"
+    },
+    {
+      "name": "诗篇",
+      "filename": "sc_19-psa.pdf",
+      "size": 1960705,
+      "sha256": "6400701ff7b8105d52af27489a88d968c30143c674978140ce70d263d7ed0f66"
+    },
+    {
+      "name": "箴言",
+      "filename": "sc_20-pro.pdf",
+      "size": 1122999,
+      "sha256": "20312b5804ca59e4d5a291b7e78a51cc1d8c74a4d153662b868bd187eb20cbef"
+    },
+    {
+      "name": "传道书",
+      "filename": "sc_21-ecc.pdf",
+      "size": 654238,
+      "sha256": "4f9d93e6317a619fc4e736c1a3ab6ac76f65df2b31463d87757af1c49846d3cf"
+    },
+    {
+      "name": "雅歌",
+      "filename": "sc_22-sos.pdf",
+      "size": 479170,
+      "sha256": "108aef162c0fddb595ae8536323ec051508b663988a86188c154302f65b14d20"
+    },
+    {
+      "name": "以赛亚书",
+      "filename": "sc_23-isa.pdf",
+      "size": 1643484,
+      "sha256": "cf7408c936886a57ecc134ee615ccb48d239d66cebb0fd3fb6ad0cffef2a8703"
+    },
+    {
+      "name": "耶利米书",
+      "filename": "sc_24-jer.pdf",
+      "size": 2133255,
+      "sha256": "c28d35bcb030591477b1df923beabe051d09409024dc03856a4bd74a1f507a25"
+    },
+    {
+      "name": "耶利米哀歌",
+      "filename": "sc_25-lam.pdf",
+      "size": 443052,
+      "sha256": "befcac2aa23752be10ff85528a13cc5e04925ef8509c951132959a75ace4a97f"
+    },
+    {
+      "name": "以西结书",
+      "filename": "sc_26-eze.pdf",
+      "size": 1236887,
+      "sha256": "9bb1f86747e4c99d1c0e10f0605570235668f6a445aa1c4f766c2095cf398d97"
+    },
+    {
+      "name": "但以理书",
+      "filename": "sc_27-da.pdf",
+      "size": 758674,
+      "sha256": "c3b1936cbea648897d2434c83b84499292a3a18686c6276e23081cf25342c013"
+    },
+    {
+      "name": "何西阿书",
+      "filename": "sc_28-hos.pdf",
+      "size": 663218,
+      "sha256": "61db49141dc997e157f29a16d24e0de61fb787f8a58d87e4ff2f79b403bc3135"
+    },
+    {
+      "name": "约珥书",
+      "filename": "sc_29-joe.pdf",
+      "size": 391881,
+      "sha256": "ee8541536efebd62b6c307293025c7fd6f77d021dee65e6f59ab311119c15bf2"
+    },
+    {
+      "name": "阿摩司书",
+      "filename": "sc_30-amo.pdf",
+      "size": 593177,
+      "sha256": "ccdcf3267495ecc1ddc757b9ae72131c5dc74a9551ba7c3b7b0993a79f631d3f"
+    },
+    {
+      "name": "俄巴底亚书",
+      "filename": "sc_31-oba.pdf",
+      "size": 257401,
+      "sha256": "a014bf3868a5c33b49318676b546b1f2f81a1636469d1e1a022d816ea4bfe5de"
+    },
+    {
+      "name": "约拿书",
+      "filename": "sc_32-jo.pdf",
+      "size": 419997,
+      "sha256": "b473a7004186600a0e88435a85b8d13691be3871c06abacf518822c69413f2d4"
+    },
+    {
+      "name": "弥迦书",
+      "filename": "sc_33-mic.pdf",
+      "size": 495016,
+      "sha256": "c03eebefe4102ed83c4ceae7292f4468498a08a8922b82a8fe935859c1cbccf4"
+    },
+    {
+      "name": "那鸿书",
+      "filename": "sc_34-nah.pdf",
+      "size": 437657,
+      "sha256": "4f61f510400a4c73da014999ebf39e972b81c5878adce76fe5ad07f38e7fa635"
+    },
+    {
+      "name": "哈巴谷书",
+      "filename": "sc_35-hab.pdf",
+      "size": 368683,
+      "sha256": "40bb5ec3b6dda541c2606e1c09f0e8ae74e5aac0969a3d8dfa9cfdaa20b22917"
+    },
+    {
+      "name": "西番雅书",
+      "filename": "sc_36-zep.pdf",
+      "size": 457386,
+      "sha256": "7f57e95f94412994c8e9ee1292eaf6c473508bb14223362e2102f7a0fd668005"
+    },
+    {
+      "name": "哈该书",
+      "filename": "sc_37-hag.pdf",
+      "size": 319510,
+      "sha256": "a08b3621dd8e2f63b6034c56cb8ef2d4723e43be4cd811ebe476b6faa1699127"
+    },
+    {
+      "name": "撒迦利亚书",
+      "filename": "sc_38-zec.pdf",
+      "size": 799534,
+      "sha256": "0ccbc1621308b3509ee971d1c5f2119d38a27385ca3dd7ce20784da0f967d880"
+    },
+    {
+      "name": "玛拉基书",
+      "filename": "sc_39-mal.pdf",
+      "size": 396265,
+      "sha256": "cea7e2ef92dc5c8f4b21b072956af242053f90059631c51490a4f21bc6e7688e"
+    },
+    {
+      "name": "马太福音",
+      "filename": "sc_40-mat.pdf",
+      "size": 1273651,
+      "sha256": "8bd32da46c4071a20e98c725b8192583c7caa21c646c212abb1c614044c86806"
+    },
+    {
+      "name": "马可福音",
+      "filename": "sc_41-mar.pdf",
+      "size": 1086001,
+      "sha256": "ea3a9e0b4d40587161e3ae22a3f1721d7fad49730424d3460d743d4c4b9be4e3"
+    },
+    {
+      "name": "路加福音",
+      "filename": "sc_42-luk.pdf",
+      "size": 1592155,
+      "sha256": "4dcc7c0f0e76d44318f7933a04f03a3b4f6ccf0db4823faf4b6575242404cd75"
+    },
+    {
+      "name": "约翰福音",
+      "filename": "sc_43-joh.pdf",
+      "size": 1255230,
+      "sha256": "a421fa08a762c7e5c1e23c8c0c9af23bd6106a84b854e19183630ae2c01af37b"
+    },
+    {
+      "name": "使徒行传",
+      "filename": "sc_44-act.pdf",
+      "size": 1294320,
+      "sha256": "c2a0eb59398422657a92ec8a89137df1b5bb654eefe501a241251144300c8152"
+    },
+    {
+      "name": "罗马书",
+      "filename": "sc_45-rom.pdf",
+      "size": 753790,
+      "sha256": "f8d4fc784e61d1e29ff995ac65186b48bb8a062a0940e61a5cc87220afd209d0"
+    },
+    {
+      "name": "哥林多前书",
+      "filename": "sc_46-1co.pdf",
+      "size": 735292,
+      "sha256": "df89e20deacd621a40b273542c74996c4f3535461cbd33ae1bd304d1b3f31de7"
+    },
+    {
+      "name": "哥林多后书",
+      "filename": "sc_47-2co.pdf",
+      "size": 622100,
+      "sha256": "8c2661c4242b0eec99d9398e31ed7c3de143d1916a8d6da2e52a815eb3be9a5e"
+    },
+    {
+      "name": "加拉太书",
+      "filename": "sc_48-gal.pdf",
+      "size": 520540,
+      "sha256": "733ed7ab0d9353daba8524ec12da535f89032b8f31aebd8ce5ce12c0d1285fe1"
+    },
+    {
+      "name": "以弗所书",
+      "filename": "sc_49-eph.pdf",
+      "size": 536982,
+      "sha256": "b728e109914af6a06ded1c4fdd2e8a881555d6340838539ba3b661fef8f32c66"
+    },
+    {
+      "name": "腓立比书",
+      "filename": "sc_50-phi.pdf",
+      "size": 480820,
+      "sha256": "c562f5ea96d4bc54e912072da8a0da40e16ed6bfc242259237df3fbc226aed46"
+    },
+    {
+      "name": "歌罗西书",
+      "filename": "sc_51-col.pdf",
+      "size": 471190,
+      "sha256": "8d52f41206541bf4b889d1ba1b5f6fccb515c7174b37311e0c1e3d7a3b131296"
+    },
+    {
+      "name": "帖撒罗尼迦前书",
+      "filename": "sc_52-1th.pdf",
+      "size": 407673,
+      "sha256": "84c138342321b3c43907c66120c9bd7cb73bf11d58230d5c88b0e9e8a0a689d5"
+    },
+    {
+      "name": "帖撒罗尼迦后书",
+      "filename": "sc_53-2th.pdf",
+      "size": 323027,
+      "sha256": "d43fc47d90a86905e20026ea5aeb713755e7a8601b8c4ed0d3208aa830fbaea8"
+    },
+    {
+      "name": "提摩太前书",
+      "filename": "sc_54-1ti.pdf",
+      "size": 556757,
+      "sha256": "2ec3565beffac13cdddd6445368e2391e161fab1c3376663e191ff91af2c6bdd"
+    },
+    {
+      "name": "提摩太后书",
+      "filename": "sc_55-2ti.pdf",
+      "size": 465382,
+      "sha256": "8840609dcc63017311239791e6265569f78d16bbd721160d2ef1c8f1f0ad5a3a"
+    },
+    {
+      "name": "提多书",
+      "filename": "sc_56-tit.pdf",
+      "size": 370048,
+      "sha256": "c1486708e35eca0a179079af0e7aa7ac5b37b842193d0ad3c0e1df1917890d78"
+    },
+    {
+      "name": "腓利门书",
+      "filename": "sc_57-phm.pdf",
+      "size": 255289,
+      "sha256": "c3e7cac5aaeaa379c50b04ab7ac48e78a157d0f8e34cbce75582188c18c758d1"
+    },
+    {
+      "name": "希伯来书",
+      "filename": "sc_58-heb.pdf",
+      "size": 691870,
+      "sha256": "a645c54a3992e5d3df861b3982e7832c54361ee1271d481dd72951edab504c05"
+    },
+    {
+      "name": "雅各书",
+      "filename": "sc_59-jam.pdf",
+      "size": 452959,
+      "sha256": "f2b0522e96462e90f96e05f71dc252ec1f5f588fa7a67e19ae071f0bd0d50d01"
+    },
+    {
+      "name": "彼得前书",
+      "filename": "sc_60-1pe.pdf",
+      "size": 540188,
+      "sha256": "91ae74c50c6eac86f495440d9bd084642f76a87e9e9804d55587b8b60d78dc08"
+    },
+    {
+      "name": "彼得后书",
+      "filename": "sc_61-2pe.pdf",
+      "size": 537351,
+      "sha256": "06b4292aac9291d467aefa4375b9990338fa4cce022ea688dec052a1378c8a40"
+    },
+    {
+      "name": "约翰一书",
+      "filename": "sc_62-1jo.pdf",
+      "size": 470548,
+      "sha256": "e2517bd76e59acda4a2ce130f1965c3e27ea4e0fc23bb5121a075d589a81654e"
+    },
+    {
+      "name": "约翰二书",
+      "filename": "sc_63-2jo.pdf",
+      "size": 261605,
+      "sha256": "9499fd355459a8da439bb72a43d9b58273aac4b6b0a332101fe83245e87b902f"
+    },
+    {
+      "name": "约翰三书",
+      "filename": "sc_64-3jo.pdf",
+      "size": 289581,
+      "sha256": "2fc3d16df7a0b4fde29ff8ff7347a6f25b4161a034af47181d05f70e7bce4419"
+    },
+    {
+      "name": "犹大书",
+      "filename": "sc_65-jud.pdf",
+      "size": 425067,
+      "sha256": "7fb095365b8a82e225f0359a77f4f963f5c7edc80792feda0d2bd38cedf379cf"
+    },
+    {
+      "name": "启示录",
+      "filename": "sc_66-rev.pdf",
+      "size": 897495,
+      "sha256": "00bac670da0f1b035793ea5de7cd8112df925f0b0bfd30eb181cab4b519057a8"
+    }
+  ]
+}
