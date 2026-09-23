@@ -22,7 +22,7 @@ python3 -m http.server 8765 --bind 127.0.0.1
 - 和合本简繁经文、KJV 对照、章节切换、节号深链接。
 - 全文关键词检索，简繁关键词均可搜索；支持英文检索、范围筛选、结果分页。
 - 字号调整、阅读记录、本地书签、章节复制、三种版本全文 TXT 下载。
-- 圣经资讯：收录译本与阅读工具消息，并附原始来源及配图。
+- 圣经资讯：以文章目录展示译本消息与读经文章，点击标题阅读；有原始来源时附链接与配图。
 - NET 圣经中文版简体 PDF：译者序、66 卷逐卷下载及包含全部文件的 ZIP 包。
 - 手机适配，无第三方脚本、广告或统计请求。
 
@@ -50,7 +50,12 @@ NIV 未内置。此版本重做原站核心阅读功能，并非原站后台和�
 ## 圣经资讯
 
 栏目地址：https://cuvbible.com/#news ，只列文章标题与日期；点标题或“阅读全文”进入文章。
-首篇文章地址：https://cuvbible.com/#news/wedevote-lsb 。新增文章时在 `app.js` 的 `newsItems` 数组添加一条，使用唯一 `slug`。
+文章地址：
+- https://cuvbible.com/#news/handcopying-old-testament
+- https://cuvbible.com/#news/copied-the-whole-bible
+- https://cuvbible.com/#news/wedevote-lsb
+
+新增文章时在 `app.js` 的 `newsItems` 数组添加一条，使用唯一 `slug`。来源与原帖链接可省略；“收录”日期指加入本站的日期。
 首条收录微读圣经上线 LSB 译本的消息，正文及配图由用户提供，原帖链接随文保留。
 配图位于 `assets/news/wedevote-lsb.jpg`；页面标注的是本站收录日期，不推算原帖发布时间。
 主导航与阅读页的“我的书签”入口使用 `#bookmarks`，`#saved` 兼容访问同一书签页。
