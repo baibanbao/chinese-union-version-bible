@@ -49,7 +49,8 @@ NIV 未内置。此版本重做原站核心阅读功能，并非原站后台和�
 
 ## 圣经资讯
 
-栏目地址：https://cuvbible.com/#news 。
+栏目地址：https://cuvbible.com/#news ，只列文章标题与日期；点标题或“阅读全文”进入文章。
+首篇文章地址：https://cuvbible.com/#news/wedevote-lsb 。新增文章时在 `app.js` 的 `newsItems` 数组添加一条，使用唯一 `slug`。
 首条收录微读圣经上线 LSB 译本的消息，正文及配图由用户提供，原帖链接随文保留。
 配图位于 `assets/news/wedevote-lsb.jpg`；页面标注的是本站收录日期，不推算原帖发布时间。
 主导航与阅读页的“我的书签”入口使用 `#bookmarks`，`#saved` 兼容访问同一书签页。

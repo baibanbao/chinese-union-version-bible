@@ -22,14 +22,14 @@ main.innerHTML=`<div class="breadcrumb"><a href="#home">圣经目录</a> / ${i<3
 $('#save').onclick=()=>{let all=storage.get('bible.bookmarks',[]);const found=all.some(x=>x.i===i&&x.c===c);all=all.filter(x=>!(x.i===i&&x.c===c));if(!found)all.push({i,c});storage.set('bible.bookmarks',all);$('#save').textContent=found?'☆ 加入书签':'★ 已加书签';toast(found?'已移除书签':'已保存到我的书签')};$('#copy').onclick=async()=>{const text=`${name(b)} 第 ${c} 章\n`+Object.entries(vs).map(([n,t])=>`${n} ${t}${state.english?'\n'+(b.en[c-1][n]||''):''}`).join('\n');try{await navigator.clipboard.writeText(text);toast('已复制本章经文')}catch{download(text,`${name(b)}-${c}.txt`);toast('已改为下载本章文本')}};if(verse)requestAnimationFrame(()=>{const v=document.getElementById('verse-'+Number(verse));if(v){v.style.background='#f3edd7';v.scrollIntoView({block:'center'})}})}
 function highlight(text,q){const parts=String(text).split(new RegExp('('+q.replace(/[.*+?^${}()|[\]\\]/g,'\\$&')+')','gi'));return parts.map((p,i)=>i%2?'<mark>'+esc(p)+'</mark>':esc(p)).join('')}
 function search(q,scope='all',page=1){if(!q||q.length>100)return missing();const results=[],needle=q.toLowerCase();BIBLE.forEach((b,i)=>{if(scope==='old'&&i>=39||scope==='new'&&i<39)return;b[state.lang].forEach((ch,j)=>Object.entries(ch).forEach(([n,text])=>{if(text.toLowerCase().includes(needle)||b[state.lang==='s'?'t':'s'][j][n]?.toLowerCase().includes(needle)||b.en[j][n]?.toLowerCase().includes(needle))results.push({i,c:j+1,n,text})}))});const pages=Math.max(1,Math.ceil(results.length/30));page=Math.min(pages,Math.max(1,Number(page)||1));main.innerHTML=`<div class="breadcrumb"><a href="#home">圣经目录</a> / 搜索</div><h1>查找经文</h1><form id="results-form" class="search-controls"><input id="search-query" aria-label="搜索关键词" value="${esc(q)}" required maxlength="100"><select id="scope" aria-label="搜索范围"><option value="all">全本圣经</option><option value="old">仅旧约</option><option value="new">仅新约</option></select><button class="primary">搜索</button></form><p class="hint">“${esc(q)}” · 找到 ${results.length} 节经文 · 第 ${page} / ${pages} 页</p>${results.slice((page-1)*30,page*30).map(r=>`<a class="result" href="${url(r.i,r.c,r.n)}"><strong>${esc(name(BIBLE[r.i]))} ${r.c} : ${r.n} →</strong><p>${highlight(r.text,q)}</p>${state.english||/[a-z]/i.test(q)?`<div class="en">${highlight(BIBLE[r.i].en[r.c-1][r.n]||'',q)}</div>`:''}</a>`).join('')||'<div class="empty">没有找到匹配经文。请试试更短的关键词。</div>'}<div class="pager">${page>1?`<a class="outline" href="#search/${encodeURIComponent(q)}/${scope}/${page-1}">← 上一页</a>`:''}${page<pages?`<a class="outline" href="#search/${encodeURIComponent(q)}/${scope}/${page+1}">下一页 →</a>`:''}</div>`;$('#scope').value=scope;$('#results-form').onsubmit=e=>{e.preventDefault();startSearch($('#search-query').value,$('#scope').value)}}
-function news(){
-  document.title='圣经资讯 · 中文和合本圣经';
-  main.innerHTML=`<div class="prose news-page">
-    <div class="breadcrumb"><a href="#home">圣经目录</a> / 圣经资讯</div>
-    <h1>圣经资讯</h1>
-    <article class="news-entry" aria-labelledby="news-wedevote-lsb">
-      <h2 id="news-wedevote-lsb">微读圣经上线 LSB 译本</h2>
-      <div class="news-meta"><span>来源：<a href="https://www.facebook.com/wedevotebible" target="_blank" rel="noopener">WeDevote Bible 微读圣经</a></span><span>收录：<time datetime="2026-09-23">2026-09-23</time></span><a href="https://www.facebook.com/wedevotebible/posts/pfbid0CcuLwnbSuhLUXVUoeSXTNheaYjvnbjKL2XYoUazrZG3BRji9G2L51ac4QeVcG3Vul" target="_blank" rel="noopener">查看原帖 ↗</a></div>
+const newsItems=[{
+  slug:'wedevote-lsb',
+  title:'微读圣经上线 LSB 译本',
+  source:'WeDevote Bible 微读圣经',
+  sourceUrl:'https://www.facebook.com/wedevotebible',
+  collected:'2026-09-23',
+  originalUrl:'https://www.facebook.com/wedevotebible/posts/pfbid0CcuLwnbSuhLUXVUoeSXTNheaYjvnbjKL2XYoUazrZG3BRji9G2L51ac4QeVcG3Vul',
+  content:`
       <div class="news-body" lang="zh-Hant">
         <p>和合本把神的名譯作「耶和華」——那是希伯來文四個字母 YHWH 的音譯。但你對照英文聖經會發現，KJV、NIV、ESV 大多譯成 the LORD（全大寫）：名字變成了頭銜。</p>
         <p>LSB（Legacy Standard Bible，The Lockman Foundation 2021）做了和和合本一樣的選擇。官網的說法是：「In the LSB, God's covenant name is rendered as Yahweh, as opposed to LORD.」短形式還保留了 Yah。</p>
@@ -39,6 +39,31 @@ function news(){
         <p>網頁版：<a href="https://wedevote.com/bible/lsb/gen/1" target="_blank" rel="noopener">wedevote.com/bible/lsb/gen/1 ↗</a></p>
       </div>
       <figure class="news-figure"><a href="assets/news/wedevote-lsb.jpg" target="_blank" rel="noopener" aria-label="查看微读圣经 LSB 上线配图原图"><img src="assets/news/wedevote-lsb.jpg" width="1638" height="2048" alt="微读圣经宣布收录 LSB 英文译本：逐字直译、承继 NASB、将神的名译作 Yahweh，可与中文译本对照阅读。" loading="lazy" decoding="async"></a><figcaption>微读圣经 LSB 译本上线配图 · 点击查看原图</figcaption></figure>
+  `
+}];
+function news(slug){
+  const item=slug?newsItems.find(x=>x.slug===slug):null;
+  if(slug&&!item)return missing();
+  if(!item){
+    document.title='圣经资讯 · 中文和合本圣经';
+    main.innerHTML=`<div class="prose news-page">
+      <div class="breadcrumb"><a href="#home">圣经目录</a> / 圣经资讯</div>
+      <h1>圣经资讯</h1>
+      <div class="news-list">${newsItems.slice().sort((a,b)=>b.collected.localeCompare(a.collected)).map(x=>`<article class="news-list-item">
+        <h2><a href="#news/${encodeURIComponent(x.slug)}">${esc(x.title)}</a></h2>
+        <div class="news-list-meta"><span>收录：<time datetime="${esc(x.collected)}">${esc(x.collected)}</time></span><span>来源：${esc(x.source)}</span></div>
+        <a class="news-read-more" href="#news/${encodeURIComponent(x.slug)}">阅读全文 →</a>
+      </article>`).join('')}</div>
+    </div>`;
+    return;
+  }
+  document.title=`${item.title} · 圣经资讯 · 中文和合本圣经`;
+  main.innerHTML=`<div class="prose news-page">
+    <div class="breadcrumb"><a href="#home">圣经目录</a> / <a href="#news">圣经资讯</a> / ${esc(item.title)}</div>
+    <article class="news-entry" aria-labelledby="news-article-title">
+      <h1 id="news-article-title">${esc(item.title)}</h1>
+      <div class="news-meta"><span>来源：<a href="${esc(item.sourceUrl)}" target="_blank" rel="noopener">${esc(item.source)}</a></span><span>收录：<time datetime="${esc(item.collected)}">${esc(item.collected)}</time></span><a href="${esc(item.originalUrl)}" target="_blank" rel="noopener">查看原帖 ↗</a></div>
+      ${item.content}
     </article>
   </div>`;
 }
@@ -47,6 +72,6 @@ function download(text,filename){const a=document.createElement('a'),u=URL.creat
 function downloads(){main.innerHTML=`<div class="prose"><div class="breadcrumb"><a href="#home">圣经目录</a> / 资源下载</div><h1>把经文留在手边</h1><p>下载 TXT 文本或 PDF，用于离线阅读。</p>${[['s','和合本 · 简体'],['t','和合本 · 繁体'],['en','King James Version']].map(([k,n])=>`<div class="download-row"><div><h3>${n}</h3><p>66 卷 · TXT 文本</p></div><button class="outline" data-download="${k}">下载全文 ↓</button></div>`).join('')}<h2 class="pdf-heading">NET 圣经中文版</h2><p>新英语译本 NET 的中文版（简体） · 译者序及 66 卷。原站更新日期：2011-12-15。</p><div class="download-row pdf-row"><div><h3>全部 67 份 PDF</h3><p>可逐卷下载，也可下载包含序言的完整 ZIP 文件包。</p></div><div class="pdf-actions"><a class="outline" href="downloads/net-chinese/">逐卷下载</a><a class="outline" href="downloads/net-chinese/sc_pdf_20111215.zip" download>整包下载 ↓</a></div></div><p>原始来源：<a href="https://bible.org/chinese/e/download/pdf" target="_blank" rel="noopener">Bible.org 中文 NET PDF 下载页</a>。版权与使用说明请参见原始来源及译者序。</p><h2 class="pdf-heading">译名定制版 PDF</h2>${[['sigao-with-cuv-names','《思高本圣经》PDF','和合本译名定制版','梅瑟→摩西'],['cuv-with-sigao-names','《和合本圣经》PDF','思高本译名定制版','摩西→梅瑟']].map(([repo,title,edition,direction])=>`<div class="download-row pdf-row"><div><h3>${title}</h3><p>${edition}：<strong>${direction}</strong></p></div><div class="pdf-actions"><a class="outline" href="https://github.com/baibanbao/${repo}/blob/main/pdf/${repo}.pdf" target="_blank" rel="noopener">查看 PDF</a><a class="outline" href="https://raw.githubusercontent.com/baibanbao/${repo}/main/pdf/${repo}.pdf" target="_blank" rel="noopener" download="${repo}.pdf">下载 PDF ↓</a></div></div>`).join('')}</div>`}
 function about(){main.innerHTML=`<article class="prose"><div class="breadcrumb"><a href="#home">圣经目录</a> / 关于本站</div><h1>让阅读回到经文本身</h1><p>这是参考 <a href="https://www.chinesebibleonline.com/" target="_blank" rel="noopener">中文圣经在线</a> 制作的独立无广告版本，与原站没有运营或隶属关系。保留经卷目录、全文搜索和中英对照，并适配手机阅读。</p><h2>经文版本</h2><p>中文使用和合本简体与繁体数据，英文使用 King James Version（KJV）。数据来自 <a href="https://getbible.net/api/" target="_blank" rel="noopener">GetBible</a> 的 cus、cut、kjv 数据集，来源目录将中文数据标为 Public Domain；KJV 数据标为 GPL，CrossWire 在随附说明中允许为任何目的使用其整理文本。完整来源与许可说明保存在 data/translation-metadata.json。经文按原始节号显示；不同译本个别分节方式可能不同。NIV 未收录。</p><h2>没有广告，也没有追踪</h2><p>阅读、搜索、字体设置和书签均在本地浏览器中完成。页面不会加载广告、统计脚本或第三方字体。所有经文和首页图片随站点一同保存，无需向原站请求经文。</p><h2>页面来源</h2><p>布局、配色及首页风景图参考原站；本站标识重新绘制。原站图片的权利归其权利人所有。网站源码托管于 GitHub，页面由 GitHub Pages 提供。</p></article>`}
 function missing(){main.innerHTML='<div class="empty"><h1>没有找到这一页</h1><a class="outline" href="#home">返回圣经目录</a></div>'}
-function route(){if(!window.BIBLE){main.innerHTML='<div class="empty">经文数据未载入，请检查 data/bible.js 是否与网页保存在同一目录，然后刷新。</div>';return}settings();document.title='中文和合本圣经';let parts;try{parts=location.hash.slice(1).split('/').map(decodeURIComponent)}catch{return missing()}window.scrollTo(0,0);switch(parts[0]){case 'read':read(parts[1],parts[2],parts[3]);break;case 'search':search(parts[1],['all','old','new'].includes(parts[2])?parts[2]:'all',parts[3]);break;case 'news':news();break;case 'bookmarks':case 'saved':bookmarks();break;case 'downloads':downloads();break;case 'about':about();break;case '':case 'home':home();break;default:missing()}}
+function route(){if(!window.BIBLE){main.innerHTML='<div class="empty">经文数据未载入，请检查 data/bible.js 是否与网页保存在同一目录，然后刷新。</div>';return}settings();document.title='中文和合本圣经';let parts;try{parts=location.hash.slice(1).split('/').map(decodeURIComponent)}catch{return missing()}window.scrollTo(0,0);switch(parts[0]){case 'read':read(parts[1],parts[2],parts[3]);break;case 'search':search(parts[1],['all','old','new'].includes(parts[2])?parts[2]:'all',parts[3]);break;case 'news':news(parts[1]);break;case 'bookmarks':case 'saved':bookmarks();break;case 'downloads':downloads();break;case 'about':about();break;case '':case 'home':home();break;default:missing()}}
 document.addEventListener('click',e=>{const el=e.target.closest('button');if(!el)return;if(el.dataset.lang){state.lang=el.dataset.lang;storage.set('bible.lang',state.lang);route()}if(el.id==='english'){state.english=!state.english;storage.set('bible.en',state.english);route()}if(['smaller','larger'].includes(el.id)){state.size=Math.max(16,Math.min(32,state.size+(el.id==='larger'?1:-1)));storage.set('bible.size',state.size);settings();toast('经文字号：'+state.size)}if(el.dataset.testament){state.testament=el.dataset.testament;$('#catalog-books').innerHTML=catalog();document.querySelectorAll('[data-testament]').forEach(b=>b.setAttribute('aria-pressed',b.dataset.testament===state.testament))}if(el.dataset.quote!==undefined){quoteIndex=Number(el.dataset.quote);$('.hero').innerHTML=hero()}if(el.dataset.download){const k=el.dataset.download,text=BIBLE.map(b=>(k==='t'?b.traditional:b.name)+'\n\n'+b[k].map((ch,c)=>`第 ${c+1} 章\n`+Object.entries(ch).map(([n,t])=>`${c+1}:${n} ${t}`).join('\n')).join('\n\n')).join('\n\n');download(text,`bible-${k}.txt`);toast('已生成全文下载')}});
 window.addEventListener('hashchange',route);route();
